@@ -8,7 +8,8 @@ const app = express();
 
 // ✅ CONFIGURE CORS FOR DEPLOYMENT
 const allowedOrigins = [
-  "http://localhost:5173", // Local Development
+  "http://localhost:5173",
+  "https://demo-frontend-c131.onrender.com",
 ];
 
 app.use(
