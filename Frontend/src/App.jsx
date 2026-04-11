@@ -1,9 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PrescriptionCanvas from "./pages/PrescriptionCanvas";
-import AITranscriptionView from "./pages/AITranscriptionView";
 import HomePage from "./pages/HomePage";
-import Login from "./pages/Login";
+import AITranscriptionView from "./pages/AITranscriptionView";
 
 function App() {
   return (
@@ -11,9 +10,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/canvas" element={<PrescriptionCanvas />} />
-          <Route path="/transcribe" element={<AITranscriptionView />} />{" "}
+          <Route path="/transcribe" element={<AITranscriptionView />} />
         </Routes>
       </div>
     </Router>
